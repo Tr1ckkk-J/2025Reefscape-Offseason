@@ -1,5 +1,7 @@
 package frc.robot;
 
+import java.awt.geom.Point2D;
+
 import com.ctre.phoenix6.signals.InvertedValue;
 import com.ctre.phoenix6.signals.SensorDirectionValue;
 
@@ -16,8 +18,6 @@ import edu.wpi.first.math.numbers.N1;
 import edu.wpi.first.math.numbers.N3;
 import edu.wpi.first.math.util.Units;
 import frc.robot.Library.MUtils.SegmentOnTheField;
-
-import java.awt.geom.Point2D;
 
 public class Constants {
 
@@ -191,7 +191,7 @@ public class Constants {
         public static final double kG = 0.66; // gravity
         public static final InvertedValue Inverted = InvertedValue.CounterClockwise_Positive;
         public static final double MaxVelocity = 1.6; // RPS
-        public static final double Acceleration = 2.4; // RPS^2
+        public static final double Acceleration = 3.2; // RPS^2
 
         public static final double MinDegs = -270.; // CCW Positive
         public static final double MaxDegs = -90.; 
@@ -293,10 +293,10 @@ public class Constants {
         public static final double kS = 0.2;
         public static final double kV = 0.06;
         public static final double kG = 0.8;
-        public static final double Acceleration = 40.; // 102.
+        public static final double Acceleration = 65.; // 102.
         public static final double MaxVelocity = 15.; // 32.5
         public static final double MaxHeight = 1.;
-        public static final double MinHeight = -0.28;
+        public static final double MinHeight = -0.31;
 
         public static final double MotorToRollerRatio = 3;
 
@@ -487,7 +487,7 @@ public class Constants {
 
         public static final double AutomaticallyAttachDistanceThreshold = 0; //TODO
 
-        public static final double ArmClimbPositionDegs = -140.; //TODO
+        public static final double ArmClimbPositionDegs = -143.; //TODO
         public static final double ElevatorAlgaeScoreHeight = 0.9;
     }
 

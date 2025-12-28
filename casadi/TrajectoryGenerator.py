@@ -103,13 +103,13 @@ def generate_multiple_trajectories(constants_list):
 if __name__ == "__main__":
     traj1 = TrajConstants(
         FILE_NAME="Trajectory_L4ToStow.csv",
-        T=0.28, dt=0.001, h0=0.7, hf=0.0,
+        T=0.54, dt=0.001, h0=0.7, hf=0.0,
         theta0_deg=-235.0, thetaf_deg=-93.0,
-        h_min_for_arm=0.22, penalty_strength=1e7
+        h_min_for_arm=0.3, penalty_strength=1e8
     )
     traj2 = TrajConstants(
         FILE_NAME="Trajectory_StowToL4.csv",
-        T=0.28, dt=0.001, h0=0.0, hf=0.7,
+        T=0.4, dt=0.001, h0=0.0, hf=0.7,
         theta0_deg=-93.0, thetaf_deg=-235.0,
         h_min_for_arm=0.2, penalty_strength=1e6
     )
